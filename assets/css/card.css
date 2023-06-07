@@ -1,0 +1,40 @@
+.auth-card .card-header {
+    background-color: #578ebe;
+    color: white;
+  }
+  
+  .card.card-custom {
+    -webkit-box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+    box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+    border: 0;
+  }
+  
+  .card.card-custom > .card-header.card-blue {
+    background-color: #578ebe !important;
+    color: #fff !important;
+  }
+  
+  .card.card-custom > .card-header .card-title .card-label {
+    margin: 0 0.75rem 0 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .card.card-custom > .card-header .card-title,
+  .card.card-custom > .card-header .card-title .card-label {
+    font-weight: 500;
+    font-size: 1.275rem;
+    color: #212121;
+  }
+  
+  .card.card-custom > .card-header.card-blue {
+    padding: 0.5rem 1.25rem !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .gutter-b {
+    margin-bottom: 25px;
+  }
+  

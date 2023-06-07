@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New Tab</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="assets/js/axios.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/dayjs.min.js"></script>
+    <script src="api/ProjectService.js"></script>
+    <script src="newtab.js"></script>
+</head>
+
+<body style="background-color: white;color:black">
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: rgb(43, 54, 67);"><a href=""
+                class="navbar-brand">ProjectTracker</a><button type="button" data-toggle="collapse"
+                data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav" id="projects-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ETS" onclick="selectProject('ETS')">ETS </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <!-- <aside class="sidebar">
+            <div class="nav sidebar-menu">
+                <div class="nav-item">
+                    <a href="#ETS" class="nav-link">ETS</a>
+                </div>
+            </div>
+        </aside> -->
+        <div class="page sidebar-close">
+            <div class="page-title">MyTasks
+                <!-- <div class="page-actions pull-right"><button type="button" class="btn btn-primary mr-auto">Create
+                        Task</button>
+                </div> -->
+                <div class="page-content">
+                    <div class="row" id="reportData">
+                        <!-- <div class="col-2" >
+                            <div class="dashboard-stat red-intense">
+                                <div class="visual">
+
+                                </div>
+                                <div class="details">
+                                    <div class="number">
+                                        12
+                                    </div>
+                                    <div class="desc">
+                                        Tasks
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                   
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card card-custom">
+                                <div class="card-header card-blue">
+                                    <div class="card-title text-white" id="projectTitle">My Tasks</div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th width="5%">Sno</th>
+                                                <th>Task Title</th>
+                                                <th width="5%">Priority</th>
+                                                <th width="10%">Status</th>                                                
+                                                <th>Due On</th>
+                                                <th>Time left(Hrs)</th>
+                                                <th>Created On</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="taskTbl">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
